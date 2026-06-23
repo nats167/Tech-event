@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Schedule</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<header class="topbar">
+  <a class="social-link" href="https://www.iiitdm.ac.in">IIITDM Kancheepuram</a>
+  <div class="menu-container">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="dropdown-menu" id="dropdownMenu">
+      <a href="countdown.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="register.html">Register</a>
+    </div>
+  </div>
+</header>
+ 
+<section class="hero">
+  <h1 class="schedule-title">
+    Event<br>
+    <span class="accent">Schedule.</span>
+  </h1>
+</section>
+ 
+<div class="typing-row">
+  <span class="prefix">↳</span>
+  <span class="live">
+    <a href="register.html">Select your events and secure your spot</a>
+    · Click the event block for details. More details about the event will be sent to your registered mail
+  </span>
+</div>
+
+ 
+<section class="schedule-container">
+ 
+  <div class="timeline-header">
+    <div>TIME</div>
+    <div>09:00</div>
+    <div>10:00</div>
+    <div>11:00</div>
+    <div>12:00</div>
+    <div>13:00</div>
+    <div>14:00</div>
+    <div>15:00</div>
+    <div>16:00</div>
+    <div>17:00</div>
+    <div>18:00</div>
+    <div>19:00</div>
+    <div>20:00</div>
+    <div>21:00</div>
+    <div>22:00</div>
+    <div>23:00</div>
+  </div>
+ 
+  <div class="timeline-grid">
+
+<div class="event-name" style="grid-row:1;">Hackathon</div>
+
+<div class="event-block hackathon"
+     style="grid-column:2 / 5; grid-row:1;"
+     onclick="showEvent('Hackathon','Build innovative solutions, collaborate with teammates, and turn ideas into reality in this intensive coding challenge.')">
+  09:00 – 12:00 · H02
+</div>
+
+<div class="event-block hackathon"
+     style="grid-column:6 / 13; grid-row:1;"
+     onclick="showEvent('Hackathon','Build innovative solutions, collaborate with teammates, and turn ideas into reality in this intensive coding challenge.')">
+  13:00 – 20:00 · H02
+</div>
+
+
+<div class="event-name" style="grid-row:2;">Capture The Flag</div>
+
+<div class="event-block ctf"
+     style="grid-column:10 / 15; grid-row:2;"
+     onclick="showEvent('Capture The Flag','Solve cybersecurity challenges and capture flags to score points.')">
+  17:00 – 21:00 · H01
+</div>
+
+
+
+<div class="event-name" style="grid-row:3;">Maze Rover</div>
+
+<div class="event-block maze"
+     style="grid-column:4 / 6; grid-row:3;"
+     onclick="showEvent('Maze Rover','Program and navigate your robot through a complex maze, optimizing speed, accuracy, and decision-making.')">
+  11:00 – 13:00 · Old Library
+</div>
+
+
+<div class="event-name" style="grid-row:4;">Line Follower</div>
+
+<div class="event-block line-follower"
+     style="grid-column:9 / 11; grid-row:4;"
+     onclick="showEvent('Line Follower','Design and tune an autonomous robot to follow a predefined path with precision and efficiency.')">
+  16:00 – 18:00 · Old Library
+</div>
+
+
+
+<div class="event-name" style="grid-row:5;">UI/UX Sprint</div>
+
+<div class="event-block uiux"
+     style="grid-column:2 / 5; grid-row:5;"
+     onclick="showEvent('UI/UX Sprint','Create intuitive and visually appealing user experiences while solving real-world design challenges under time constraints.')">
+  09:00 – 12:00 · H04
+</div>
+
+
+
+<div class="event-name" style="grid-row:6;">Figma Sprint</div>
+
+<div class="event-block figma"
+     style="grid-column:10 / 14; grid-row:6;"
+     onclick="showEvent('Figma Sprint','Showcase your design skills by rapidly creating high-fidelity interfaces and prototypes using Figma.')">
+  17:00 – 21:00 · H04
+</div>
+
+
+
+<div class="event-name" style="grid-row:7;">Tech Quiz</div>
+
+<div class="event-block quiz"
+     style="grid-column:14 / 17; grid-row:7;"onclick="showEvent('Tech Quiz','Challenge your technical knowledge across programming, technology, science, and innovation through multiple quiz rounds.')">
+  09:00 – 11:00 · H25
+</div>
+
+
+
+<div class="event-name" style="grid-row:8;">Code Sprint</div>
+
+<div class="event-block code"
+     style="grid-column:6 / 11; grid-row:8;"
+     onclick="showEvent('Code Sprint','Compete in a fast-paced programming contest that tests problem-solving ability, coding speed, and algorithmic thinking.')">
+  13:00 – 18:00 · H15
+</div>
+ 
+  </div>
+</section>
+ 
+<div id="eventPopup" class="event-popup">
+  <button class="close-btn" onclick="closePopup()">✕</button>
+  <h3 id="popupTitle"></h3>
+  <p id="popupText"></p>
+</div>
+ 
+<footer class="footbar">
+  <p><span class="dot"></span>Registrations Open</p>
+  <p>
+    <a class="social-link" href="https://linktr.ee/iiitdm.technical">Technical Affairs — IIITDM</a>
+  </p>
+</footer>
+ 
+<script src="schudule.js"></script>
+ 
+</body>
+</html>
+ 

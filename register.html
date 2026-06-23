@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Register — Tech Event</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a class="social-link" href="https://www.iiitdm.ac.in">
+    IIITDM Kancheepuram
+  </a>
+
+  <div class="menu-container">
+
+    <button class="menu-btn" id="menuBtn">
+      ☰
+    </button>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+      <a href="countdown.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="register.html">Register</a>
+    </div>
+
+  </div>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-row">
+
+    <h1 class="big-title">
+      Event<br>
+      <span class="accent">Registration.</span>
+    </h1>
+
+  </div>
+
+</section>
+
+<div class="typing-row">
+  <span class="prefix">↳</span>
+  <span class="live">
+    Last day June 26.
+  </span>
+</div>
+
+<section class="register-section">
+
+  <div class="editor-window">
+
+    <div class="editor-tab">
+      registration-form.html
+    </div>
+
+    <div class="editor-content">
+
+      <form id="regForm">
+
+        <label for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        >
+
+        <label for="roll">Roll Number</label>
+        <input
+          type="text"
+          id="roll"
+          placeholder="Enter roll number"
+          required
+        >
+
+        <label for="phone">Phone Number</label>
+        <input
+          type="text"
+          id="phone"
+          placeholder="10 digit phone number"
+          required
+        >
+
+        <label for="email">Institute Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="yourrollnumber@iiitdm.ac.in"
+          required
+        >
+
+        <label>Select Events</label>
+
+        <div class="events-grid">
+
+          <label>
+            <input type="checkbox" value="Hackathon">
+            Hackathon
+          </label>
+
+          <label>
+            <input type="checkbox" value="CodeSprint">
+            CodeSprint
+          </label>
+
+          <label>
+            <input type="checkbox" value="Capture The Flag">
+            Capture The Flag
+          </label>
+
+          <label>
+            <input type="checkbox" value="Line Follower">
+            Line Follower
+          </label>
+
+          <label>
+            <input type="checkbox" value="Figma Sprint">
+            Figma Sprint
+          </label>
+
+          <label>
+            <input type="checkbox" value="UI UX Sprint">
+            UI/UX Sprint
+          </label>
+
+          <label>
+            <input type="checkbox" value="Maze">
+            Maze Rover
+          </label>
+
+          <label>
+            <input type="checkbox" value="Tech Quiz">
+            Tech Quiz
+          </label>
+
+        </div>
+
+        <button type="submit">
+          Register →
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footbar">
+  <p>
+    <span class="dot"></span>
+    Registrations Open
+  </p>
+
+  <p>
+      <a class="social-link" href="https://linktr.ee/iiitdm.technical?utm_source=linktree_profile_share&ltsid=4c83024d-5d9b-40d4-80d4-9f7852668ea3">
+    Technical Affairs — IIITDM
+  </a>
+  </p>
+</footer>
+<script src="register.js"></script>
+</body>
+</html>
